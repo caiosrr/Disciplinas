@@ -4,27 +4,27 @@
 
 No modelo de Lorentz, a resposta óptica do material é descrita pelo movimento de um elétron ligado. A equação de movimento pode ser escrita como
 
-$$m\ddot{x}+2m\gamma\dot{x}+\frac{dU}{dx}=-eE(t),$$
+$$m\ddot{x}+2m\gamma\dot{x}+\frac{dU}{dx}=-eE(t)$$
 
 onde \(U(x)\) é a energia potencial eletrostática do elétron ligado e \(E(t)\) é o campo elétrico aplicado.
 
 Expandindo o potencial em torno da posição de equilíbrio,
 
-$$U(x)=c_2x^2+c_3x^3+c_4x^4+\cdots,$$
+$$U(x)=c_2x^2+c_3x^3+c_4x^4+\cdots$$
 
 temos
 
-$$\frac{dU}{dx}=2c_2x+3c_3x^2+4c_4x^3+\cdots.$$
+$$\frac{dU}{dx}=2c_2x+3c_3x^2+4c_4x^3+\cdots$$
 
 O termo proporcional a \(x\) gera a resposta linear. Os termos não harmônicos, proporcionais a \(x^2,x^3,\ldots\), geram respostas não lineares. Assim, a forma do potencial determina quais ordens de não linearidade podem aparecer na resposta óptica.
 
 A simetria do potencial é essencial. Se o meio possui simetria de inversão, deslocar o elétron para \(+x\) ou para \(-x\) deve custar a mesma energia:
 
-$$U(x)=U(-x).$$
+$$U(x)=U(-x)$$
 
 Nesse caso, o potencial é uma função par e sua expansão só contém potências pares de \(x\):
 
-$$U(x)=c_2x^2+c_4x^4+c_6x^6+\cdots.$$
+$$U(x)=c_2x^2+c_4x^4+c_6x^6+\cdots$$
 
 Consequentemente, a força restauradora
 
@@ -32,19 +32,19 @@ $$F_{\mathrm{rest}}=-\frac{dU}{dx}$$
 
 é uma função ímpar de \(x\):
 
-$$F_{\mathrm{rest}}(-x)=-F_{\mathrm{rest}}(x).$$
+$$F_{\mathrm{rest}}(-x)=-F_{\mathrm{rest}}(x)$$
 
 Isso implica que a resposta macroscópica do material também deve respeitar a simetria de inversão. A polarização pode ser expandida em potências do campo:
 
-$$P=\epsilon_0\left(\chi^{(1)}E+\chi^{(2)}E^2+\chi^{(3)}E^3+\cdots\right).$$
+$$P=\epsilon_0\left(\chi^{(1)}E+\chi^{(2)}E^2+\chi^{(3)}E^3+\cdots\right)$$
 
 Em um meio centrossimétrico, ao inverter o campo elétrico, a polarização também deve inverter:
 
-$$P(-E)=-P(E).$$
+$$P(-E)=-P(E)$$
 
 Mas, usando a expansão,
 
-$$P(-E)=\epsilon_0\left(-\chi^{(1)}E+\chi^{(2)}E^2-\chi^{(3)}E^3+\cdots\right).$$
+$$P(-E)=\epsilon_0\left(-\chi^{(1)}E+\chi^{(2)}E^2-\chi^{(3)}E^3+\cdots\right)$$
 
 Para que \(P(-E)=-P(E)\), todos os termos pares devem desaparecer. Portanto,
 
@@ -60,29 +60,29 @@ $$\boxed{\chi^{(2)}\neq 0 \text{ exige ausência de simetria de inversão, enqua
 
 Considera-se agora um meio com resposta não linear de terceira ordem. Assumindo que estamos longe de ressonâncias e que a absorção pode ser desprezada, \(\chi^{(3)}\) pode ser tomado como real. No modelo de Lorentz, isso corresponde a incluir um termo anarmônico de ordem superior no potencial. Por exemplo, em um meio centrossimétrico, o primeiro termo não linear permitido pode ser escrito como
 
-$$U(x)\approx \frac{1}{2}m\omega_0^2x^2+\frac{1}{4}mbx^4.$$
+$$U(x)\approx \frac{1}{2}m\omega_0^2x^2+\frac{1}{4}mbx^4$$
 
 Nesse caso,
 
-$$\frac{dU}{dx}=m\omega_0^2x+mbx^3,$$
+$$\frac{dU}{dx}=m\omega_0^2x+mbx^3$$
 
 e a equação de movimento fica
 
-$$\ddot{x}+2\gamma\dot{x}+\omega_0^2x+bx^3=-\frac{e}{m}E(t).$$
+$$\ddot{x}+2\gamma\dot{x}+\omega_0^2x+bx^3=-\frac{e}{m}E(t)$$
 
 O termo \(bx^3\) é tratado como uma pequena perturbação. Assim, escreve-se
 
-$$x(t)=x_1(t)+x_3(t)+\cdots,$$
+$$x(t)=x_1(t)+x_3(t)+\cdots$$
 
 onde \(x_1\) é a resposta linear e \(x_3\) é a correção de terceira ordem.
 
 Pelo item anterior, em um meio centrossimétrico os termos pares da polarização devem desaparecer. Portanto, a menor correção não linear permitida é de terceira ordem:
 
-$$P=\epsilon_0\chi^{(1)}E+\epsilon_0\chi^{(3)}E^3+\cdots.$$
+$$P=\epsilon_0\chi^{(1)}E+\epsilon_0\chi^{(3)}E^3+\cdots$$
 
 Isso também aparece no modelo microscópico, pois a polarização é proporcional ao deslocamento dos elétrons:
 
-$$P=-Nex.$$
+$$P=-Nex$$
 
 Como \(x_1\propto E\), o termo \(bx^3\) gera uma correção proporcional a \(x_1^3\), isto é, proporcional a \(E^3\). Essa contribuição é representada macroscopicamente por \(\chi^{(3)}\).
 
@@ -90,23 +90,23 @@ Para um campo monocromático na frequência \(\omega=2\pi c/\lambda_0\), com \(\
 
 Usando a notação complexa,
 
-$$E(t)=E(\omega)e^{-i\omega t}+\mathrm{c.c.},$$
+$$E(t)=E(\omega)e^{-i\omega t}+\mathrm{c.c.}$$
 
 a componente de terceira ordem na frequência fundamental é proporcional a
 
-$$P^{(3)}(\omega)=3\epsilon_0\chi^{(3)}|E(\omega)|^2E(\omega).$$
+$$P^{(3)}(\omega)=3\epsilon_0\chi^{(3)}|E(\omega)|^2E(\omega)$$
 
 Portanto, a polarização total na frequência \(\omega\) pode ser escrita como
 
-$$P(\omega)=\epsilon_0\left[\chi^{(1)}+3\chi^{(3)}|E(\omega)|^2\right]E(\omega).$$
+$$P(\omega)=\epsilon_0\left[\chi^{(1)}+3\chi^{(3)}|E(\omega)|^2\right]E(\omega)$$
 
 Assim, o campo enxerga uma suscetibilidade efetiva
 
-$$\chi_{\mathrm{eff}}=\chi^{(1)}+3\chi^{(3)}|E(\omega)|^2.$$
+$$\chi_{\mathrm{eff}}=\chi^{(1)}+3\chi^{(3)}|E(\omega)|^2$$
 
 Como
 
-$$n^2=1+\chi_{\mathrm{eff}},$$
+$$n^2=1+\chi_{\mathrm{eff}}$$
 
 temos
 
@@ -115,19 +115,19 @@ $$n^2(I)=n_0^2+3\chi^{(3)}|E(\omega)|^2 \quad \text{onde} \quad n_0^2=1+\chi^{(1
 Agora relacionamos a amplitude complexa do campo com a intensidade. Como \(E_0=2|E(\omega)|\),
 
 $$I=\frac{1}{2}n_0\epsilon_0cE_0^2
-=2n_0\epsilon_0c|E(\omega)|^2.$$
+=2n_0\epsilon_0c|E(\omega)|^2$$
 
 Logo,
 
-$$|E(\omega)|^2=\frac{I}{2n_0\epsilon_0c}.$$
+$$|E(\omega)|^2=\frac{I}{2n_0\epsilon_0c}$$
 
 Substituindo,
 
-$$n(I)=\sqrt{n_0^2+\frac{3\chi^{(3)}}{2n_0\epsilon_0c}I}.$$
+$$n(I)=\sqrt{n_0^2+\frac{3\chi^{(3)}}{2n_0\epsilon_0c}I}$$
 
 Como o termo não linear é pequeno,
 
-$$n(I)\approx n_0+\frac{1}{2n_0}\frac{3\chi^{(3)}}{2n_0\epsilon_0c}I.$$
+$$n(I)\approx n_0+\frac{1}{2n_0}\frac{3\chi^{(3)}}{2n_0\epsilon_0c}I$$
 
 Portanto,
 
@@ -135,11 +135,11 @@ $$\boxed{n(I)\approx n_0+n_2I}$$
 
 com
 
-$$\boxed{n_2=\frac{3\chi^{(3)}}{4n_0^2\epsilon_0c}}.$$
+$$\boxed{n_2=\frac{3\chi^{(3)}}{4n_0^2\epsilon_0c}}$$
 
 Para o nitreto de silício em \(\lambda_0=1560\,\mathrm{nm}\), essa expressão deve ser entendida como
 
-$$\boxed{n(1560\,\mathrm{nm},I)=n_0(1560\,\mathrm{nm})+n_2(1560\,\mathrm{nm})I}.$$
+$$\boxed{n(1560\,\mathrm{nm},I)=n_0(1560\,\mathrm{nm})+n_2(1560\,\mathrm{nm})I}$$
 
 O sinal de \(n_2\) depende do sinal de \(\chi^{(3)}\). Se \(n_2>0\), o índice aumenta com a intensidade; se \(n_2<0\), ele diminui.
 
@@ -150,13 +150,13 @@ O feixe tem potência \(P_{\mathrm{laser}}=1\,\mathrm{W}\) e é focalizado em um
 
 $$A=\pi (D/2)^2=\pi(15\times 10^{-6})^2$$
 
-$$A\approx 7.07\times 10^{-10}\,\mathrm{m^2}.$$
+$$A\approx 7.07\times 10^{-10}\,\mathrm{m^2}$$
 
 Logo, a intensidade média do feixe é
 
 $$I=\frac{P_{\mathrm{laser}}}{A}$$
 
-$$I\approx \frac{1}{7.07\times 10^{-10}}\approx 1.4147\times 10^9\,\mathrm{W/m^2}.$$
+$$I\approx \frac{1}{7.07\times 10^{-10}}\approx 1.4147\times 10^9\,\mathrm{W/m^2}$$
 
 Para relacionar essa intensidade com a amplitude do campo elétrico dentro do cristal, usamos o vetor de Poynting. Para uma onda plana em um meio não magnético de índice de refração \(n\),
 
@@ -164,7 +164,7 @@ $$E(t)=E_0\cos(\omega t)$$
 
 e
 
-$$B(t)=\frac{n}{c}E_0\cos(\omega t).$$
+$$B(t)=\frac{n}{c}E_0\cos(\omega t)$$
 
 Então,
 
@@ -176,7 +176,7 @@ $$I=\langle S\rangle=\frac{1}{2}n\epsilon_0cE_0^2 \longrightarrow E_0^2=\frac{2I
 
 Substituindo \(n=2\),
 
-$$E_0\approx 7.30\times 10^5\,\mathrm{V/m}.$$
+$$E_0\approx 7.30\times 10^5\,\mathrm{V/m}$$
 
 A partir daqui, precisamos tomar cuidado com a convenção de amplitude. Nas contas de óptica não linear, costuma-se escrever
 
@@ -184,91 +184,91 @@ $$E(t)=E(\omega)e^{-i\omega t}+\mathrm{c.c.}$$
 
 Como acima usamos \(E(t)=E_0\cos(\omega t)\), temos
 
-$$E(\omega)=\frac{E_0}{2}.$$
+$$E(\omega)=\frac{E_0}{2}$$
 
 A polarização de segunda ordem é
 
-$$P^{(2)}(t)=\epsilon_0\chi^{(2)}E^2(t).$$
+$$P^{(2)}(t)=\epsilon_0\chi^{(2)}E^2(t)$$
 
 Na convenção complexa, a amplitude da componente que oscila em \(2\omega\) é
 
-$$P^{(2)}(2\omega)=\epsilon_0\chi^{(2)}[E(\omega)]^2.$$
+$$P^{(2)}(2\omega)=\epsilon_0\chi^{(2)}[E(\omega)]^2$$
 
 Logo,
 
-$$P^{(2)}(2\omega)=\frac{1}{4}\epsilon_0\chi^{(2)}E_0^2.$$
+$$P^{(2)}(2\omega)=\frac{1}{4}\epsilon_0\chi^{(2)}E_0^2$$
 
 De modo equivalente, usando \(E_0^2=2I/(n\epsilon_0c)\),
 
-$$P^{(2)}(2\omega)=\frac{\chi^{(2)}I}{2nc}.$$
+$$P^{(2)}(2\omega)=\frac{\chi^{(2)}I}{2nc}$$
 
 Com \(\chi^{(2)}=4\times 10^{-11}\,\mathrm{m/V}\),
 
 $$P^{(2)}(2\omega)=\frac{(4\times 10^{-11})(1.4147\times 10^9)}{2(2)(2.998\times 10^8)}$$
 
-$$\boxed{P^{(2)}(2\omega)\approx 4.72\times 10^{-11}\,\mathrm{C/m^2}}.$$
+$$\boxed{P^{(2)}(2\omega)\approx 4.72\times 10^{-11}\,\mathrm{C/m^2}}$$
 
 Estima-se agora a amplitude do momento de dipolo por átomo associado à componente em \(2\omega\). A polarização macroscópica é o momento de dipolo por unidade de volume. Assim,
 
-$$P=N\mu,$$
+$$P=N\mu$$
 
 onde \(N\) é a densidade de átomos. Como o enunciado não fornece essa densidade, usamos a estimativa típica para um sólido:
 
-$$N\sim 10^{28}\,\mathrm{m^{-3}}.$$
+$$N\sim 10^{28}\,\mathrm{m^{-3}}$$
 
 Portanto,
 
-$$\mu(2\omega)=\frac{P^{(2)}(2\omega)}{N}.$$
+$$\mu(2\omega)=\frac{P^{(2)}(2\omega)}{N}$$
 
 Usando o valor encontrado acima,
 
 $$\mu(2\omega)\approx \frac{4.72\times 10^{-11}}{10^{28}}$$
 
-$$\boxed{\mu(2\omega)\approx 4.72\times 10^{-39}\,\mathrm{C\,m}}.$$
+$$\boxed{\mu(2\omega)\approx 4.72\times 10^{-39}\,\mathrm{C\,m}}$$
 
 A unidade atômica de momento de dipolo é
 
 $$ea_0=(1.60\times 10^{-19})(5.29\times 10^{-11})$$
 
-$$ea_0\approx 8.48\times 10^{-30}\,\mathrm{C\,m}.$$
+$$ea_0\approx 8.48\times 10^{-30}\,\mathrm{C\,m}$$
 
 Logo,
 
 $$\frac{\mu(2\omega)}{ea_0}\approx \frac{4.72\times 10^{-39}}{8.48\times 10^{-30}}$$
 
-$$\boxed{\frac{\mu(2\omega)}{ea_0}\approx 5.6\times 10^{-10}}.$$
+$$\boxed{\frac{\mu(2\omega)}{ea_0}\approx 5.6\times 10^{-10}}$$
 
 Assim, o momento de dipolo não linear por átomo é cerca de \(10^{-9}\) vezes a unidade atômica de dipolo.
 
 Para comparar com a resposta linear do átomo, usamos
 
-$$P^{(1)}(\omega)=\epsilon_0\chi^{(1)}E(\omega).$$
+$$P^{(1)}(\omega)=\epsilon_0\chi^{(1)}E(\omega)$$
 
 Como
 
-$$n^2=1+\chi^{(1)},$$
+$$n^2=1+\chi^{(1)}$$
 
 temos, para \(n=2\),
 
-$$\chi^{(1)}=n^2-1=3.$$
+$$\chi^{(1)}=n^2-1=3$$
 
 Então,
 
-$$P^{(1)}(\omega)=3\epsilon_0\frac{E_0}{2}.$$
+$$P^{(1)}(\omega)=3\epsilon_0\frac{E_0}{2}$$
 
 Com \(E_0\approx 7.30\times 10^5\,\mathrm{V/m}\),
 
-$$P^{(1)}(\omega)\approx 9.70\times 10^{-6}\,\mathrm{C/m^2}.$$
+$$P^{(1)}(\omega)\approx 9.70\times 10^{-6}\,\mathrm{C/m^2}$$
 
 O momento de dipolo linear por átomo é
 
 $$\mu(\omega)=\frac{P^{(1)}(\omega)}{N}$$
 
-$$\boxed{\mu(\omega)\approx 9.70\times 10^{-34}\,\mathrm{C\,m}}.$$
+$$\boxed{\mu(\omega)\approx 9.70\times 10^{-34}\,\mathrm{C\,m}}$$
 
 Comparando com a unidade atômica,
 
-$$\boxed{\frac{\mu(\omega)}{ea_0}\approx 1.14\times 10^{-4}}.$$
+$$\boxed{\frac{\mu(\omega)}{ea_0}\approx 1.14\times 10^{-4}}$$
 
 Comparando diretamente a resposta não linear com a linear,
 
@@ -276,15 +276,15 @@ $$\frac{\mu(2\omega)}{\mu(\omega)}
 \approx
 \frac{4.72\times 10^{-39}}{9.70\times 10^{-34}}$$
 
-$$\boxed{\frac{\mu(2\omega)}{\mu(\omega)}\approx 4.9\times 10^{-6}}.$$
+$$\boxed{\frac{\mu(2\omega)}{\mu(\omega)}\approx 4.9\times 10^{-6}}$$
 
 Portanto, o momento de dipolo induzido em \(2\omega\) é muito pequeno na escala atômica:
 
-$$\mu(2\omega)\sim 10^{-9}ea_0.$$
+$$\mu(2\omega)\sim 10^{-9}ea_0$$
 
 Além disso, ele é muito menor que o momento de dipolo induzido pela resposta linear:
 
-$$\mu(2\omega)\sim 10^{-6}\mu(\omega).$$
+$$\mu(2\omega)\sim 10^{-6}\mu(\omega)$$
 
 Assim, para os campos considerados, a resposta de segunda ordem é uma pequena correção à resposta linear do átomo.
 
@@ -359,6 +359,10 @@ Portanto, com absorção, as relações de Manley-Rowe não são mais conservada
 A origem microscópica da absorção não é essencial para essa derivação. O que entra no modelo é o coeficiente efetivo \(\alpha_j\) em cada frequência. A origem da absorção passaria a ser importante se ela dependesse da intensidade, fosse saturável, ou alterasse a própria resposta não linear do material.
 
 ### **4.a)**
+
+Os códigos usados nas simulações da questão 4 estão disponíveis em:
+
+[github.com/caiosrr/Disciplinas/tree/main/NLO/Lista_1/q4](https://github.com/caiosrr/Disciplinas/tree/main/NLO/Lista_1/q4)
 
 Primeiro, o problema é resolvido analiticamente usando a aproximação de bomba não depletada. Depois, para comparação, o sistema completo é resolvido numericamente, permitindo que \(a_2\) varie ao longo da propagação.
 
@@ -627,11 +631,11 @@ Foram consultadas as seguintes referências para os valores numéricos do KTP us
 
 Temos dois campos de entrada com o mesmo comprimento de onda,
 
-$$\lambda_1=\lambda_2=1064\,\mathrm{nm},$$
+$$\lambda_1=\lambda_2=1064\,\mathrm{nm}$$
 
 mas com polarizações ortogonais. Como a propagação ocorre no plano \(XY\), fazendo um ângulo \(\phi\) com o eixo \(x\), podemos escrever
 
-$$\hat{k}=\cos\phi\,\hat{x}+\sin\phi\,\hat{y}.$$
+$$\hat{k}=\cos\phi\,\hat{x}+\sin\phi\,\hat{y}$$
 
 Para essa geometria, os dois modos próprios de polarização são:
 
@@ -644,49 +648,49 @@ $$E_1(\omega)\parallel \hat{z}$$
 
 e
 
-$$E_2(\omega)\parallel XY.$$
+$$E_2(\omega)\parallel XY$$
 
 Como as frequências de entrada são iguais, a frequência soma é
 
-$$\omega_3=\omega_1+\omega_2=2\omega,$$
+$$\omega_3=\omega_1+\omega_2=2\omega$$
 
 ou seja,
 
-$$\lambda_3=532\,\mathrm{nm}.$$
+$$\lambda_3=532\,\mathrm{nm}$$
 
 A condição de casamento de fase é
 
-$$k_3=k_1+k_2.$$
+$$k_3=k_1+k_2$$
 
 Usando \(k=n\omega/c\), temos
 
-$$\frac{n_3(2\omega)(2\omega)}{c}=\frac{n_1(\omega)\omega}{c}+\frac{n_2(\omega)\omega}{c}.$$
+$$\frac{n_3(2\omega)(2\omega)}{c}=\frac{n_1(\omega)\omega}{c}+\frac{n_2(\omega)\omega}{c}$$
 
 Logo,
 
-$$n_3(2\omega)=\frac{n_1(\omega)+n_2(\omega)}{2}.$$
+$$n_3(2\omega)=\frac{n_1(\omega)+n_2(\omega)}{2}$$
 
 Agora comparamos as possibilidades. Em KTP, para \(1064\,\mathrm{nm}\), os índices principais são aproximadamente
 
-$$n_x\simeq 1.738,\qquad n_y\simeq 1.745,\qquad n_z\simeq 1.830.$$
+$$n_x\simeq 1.738,\qquad n_y\simeq 1.745,\qquad n_z\simeq 1.830$$
 
 Como um dos campos fundamentais está polarizado em \(z\), seu índice é fixo e igual a \(n_z(1064)\). O outro campo fundamental está polarizado no plano \(XY\), então ele sente um índice efetivo \(n_{XY}(1064,\phi)\), que varia com o ângulo de propagação. Como esse modo no plano \(XY\) mistura os eixos \(x\) e \(y\), seu índice efetivo fica entre os dois índices principais:
 
-$$n_x(1064)\lesssim n_{XY}(1064,\phi)\lesssim n_y(1064).$$
+$$n_x(1064)\lesssim n_{XY}(1064,\phi)\lesssim n_y(1064)$$
 
 Portanto, o índice que o campo gerado precisaria ter para satisfazer o casamento de fase fica no intervalo
 
-$$\frac{n_z(1064)+n_x(1064)}{2}\lesssim n_3(532,\phi)\lesssim \frac{n_z(1064)+n_y(1064)}{2},$$
+$$\frac{n_z(1064)+n_x(1064)}{2}\lesssim n_3(532,\phi)\lesssim \frac{n_z(1064)+n_y(1064)}{2}$$
 
 isto é,
 
-$$1.784\lesssim n_3(532,\phi)\lesssim 1.788.$$
+$$1.784\lesssim n_3(532,\phi)\lesssim 1.788$$
 
 Portanto, para haver casamento de fase, o campo gerado em \(532\,\mathrm{nm}\) deve ter índice nessa faixa.
 
 Em \(532\,\mathrm{nm}\), o índice para polarização em \(z\) é aproximadamente
 
-$$n_z(532)\simeq 1.889,$$
+$$n_z(532)\simeq 1.889$$
 
 que é muito maior que o intervalo necessário. Logo, o campo soma não pode ser polarizado em \(z\) para satisfazer o casamento de fase.
 
@@ -696,13 +700,13 @@ $$n_x(532)\simeq 1.778$$
 
 e
 
-$$n_y(532)\simeq 1.789.$$
+$$n_y(532)\simeq 1.789$$
 
 Esse intervalo contém os valores necessários para o casamento de fase. Portanto, o campo de soma deve ser polarizado no plano \(XY\).
 
 Assim, a interação tem a forma
 
-$$\boxed{z+XY\rightarrow XY}.$$
+$$\boxed{z+XY\rightarrow XY}$$
 
 Ou seja, um dos campos fundamentais é polarizado ao longo de \(z\), o outro é polarizado no plano \(XY\), e o campo de soma de frequências também é polarizado no plano \(XY\).
 
@@ -710,67 +714,67 @@ Ou seja, um dos campos fundamentais é polarizado ao longo de \(z\), o outro é 
 
 Agora calculamos o ângulo \(\phi\) que satisfaz o casamento de fase para a interação encontrada no item anterior:
 
-$$z+XY\rightarrow XY.$$
+$$z+XY\rightarrow XY$$
 
 O campo polarizado em \(z\) tem índice
 
-$$n_z(1064),$$
+$$n_z(1064)$$
 
 enquanto os campos polarizados no plano \(XY\) têm índice efetivo dependente do ângulo. Para propagação no plano \(XY\),
 
-$$\hat{k}=\cos\phi\,\hat{x}+\sin\phi\,\hat{y},$$
+$$\hat{k}=\cos\phi\,\hat{x}+\sin\phi\,\hat{y}$$
 
 o índice efetivo do modo polarizado no plano \(XY\) é
 
-$$\boxed{\frac{1}{n_{XY}^2(\lambda,\phi)}=\frac{\cos^2\phi}{n_y^2(\lambda)}+\frac{\sin^2\phi}{n_x^2(\lambda)}}.$$
+$$\boxed{\frac{1}{n_{XY}^2(\lambda,\phi)}=\frac{\cos^2\phi}{n_y^2(\lambda)}+\frac{\sin^2\phi}{n_x^2(\lambda)}}$$
 
 Essa expressão tem os limites esperados: para \(\phi=0\), a propagação é ao longo de \(x\) e a polarização no plano \(XY\) fica ao longo de \(y\), de modo que \(n_{XY}=n_y\). Para \(\phi=90^\circ\), a propagação é ao longo de \(y\) e a polarização fica ao longo de \(x\), de modo que \(n_{XY}=n_x\).
 
 A condição de casamento de fase é
 
-$$k_{2\omega}=k_{\omega,z}+k_{\omega,XY}.$$
+$$k_{2\omega}=k_{\omega,z}+k_{\omega,XY}$$
 
 Como \(k=n\omega/c\),
 
-$$\frac{2\omega}{c}n_{XY}(532,\phi)=\frac{\omega}{c}n_z(1064)+\frac{\omega}{c}n_{XY}(1064,\phi).$$
+$$\frac{2\omega}{c}n_{XY}(532,\phi)=\frac{\omega}{c}n_z(1064)+\frac{\omega}{c}n_{XY}(1064,\phi)$$
 
 Logo,
 
-$$\boxed{n_{XY}(532,\phi)=\frac{n_z(1064)+n_{XY}(1064,\phi)}{2}}.$$
+$$\boxed{n_{XY}(532,\phi)=\frac{n_z(1064)+n_{XY}(1064,\phi)}{2}}$$
 
 Usando os índices aproximados do KTP em temperatura ambiente,
 
-$$n_x(1064)\simeq 1.738,\qquad n_y(1064)\simeq 1.745,\qquad n_z(1064)\simeq 1.830,$$
+$$n_x(1064)\simeq 1.738,\qquad n_y(1064)\simeq 1.745,\qquad n_z(1064)\simeq 1.830$$
 
 e
 
-$$n_x(532)\simeq 1.778,\qquad n_y(532)\simeq 1.789,$$
+$$n_x(532)\simeq 1.778,\qquad n_y(532)\simeq 1.789$$
 
 a equação de casamento de fase foi resolvida numericamente. O resultado é
 
-$$\phi\simeq 23.6^\circ.$$
+$$\phi\simeq 23.6^\circ$$
 
 Nesse ângulo,
 
-$$n_{XY}(1064,\phi)\simeq 1.744,$$
+$$n_{XY}(1064,\phi)\simeq 1.744$$
 
 e
 
-$$n_{XY}(532,\phi)\simeq 1.787.$$
+$$n_{XY}(532,\phi)\simeq 1.787$$
 
 De fato,
 
-$$\frac{n_z(1064)+n_{XY}(1064,\phi)}{2}\simeq \frac{1.830+1.744}{2}\simeq 1.787,$$
+$$\frac{n_z(1064)+n_{XY}(1064,\phi)}{2}\simeq \frac{1.830+1.744}{2}\simeq 1.787$$
 
 que coincide com \(n_{XY}(532,\phi)\). Portanto,
 
-$$\boxed{\phi_{\mathrm{PM}}\simeq 23.6^\circ}.$$
+$$\boxed{\phi_{\mathrm{PM}}\simeq 23.6^\circ}$$
 
 ### **5.c)**
 
 Agora queremos o coeficiente não linear efetivo da interação
 
-$$z+XY\rightarrow XY.$$
+$$z+XY\rightarrow XY$$
 
 Para o KTP, usamos a forma reduzida do tensor \(d\):
 
@@ -780,42 +784,42 @@ d=
 0&0&0&0&d_{15}&0\\
 0&0&0&d_{24}&0&0\\
 d_{31}&d_{32}&d_{33}&0&0&0
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
 Na nossa geometria, um campo fundamental está em \(z\), enquanto o outro está no plano \(XY\). Como a propagação faz ângulo \(\phi\) com \(x\), a polarização no plano \(XY\), perpendicular a \(\vec{k}\), pode ser escrita como
 
-$$\hat{e}_{XY}=-\sin\phi\,\hat{x}+\cos\phi\,\hat{y}.$$
+$$\hat{e}_{XY}=-\sin\phi\,\hat{x}+\cos\phi\,\hat{y}$$
 
 Assim,
 
-$$E_x=-E_{XY}\sin\phi,\qquad E_y=E_{XY}\cos\phi.$$
+$$E_x=-E_{XY}\sin\phi,\qquad E_y=E_{XY}\cos\phi$$
 
 Como o processo mistura um campo em \(z\) com um campo no plano \(XY\), os termos que aparecem são
 
-$$P_x^{(2)}\propto d_{15}E_zE_x,\qquad P_y^{(2)}\propto d_{24}E_zE_y.$$
+$$P_x^{(2)}\propto d_{15}E_zE_x,\qquad P_y^{(2)}\propto d_{24}E_zE_y$$
 
 Mas o campo gerado também deve sair no modo \(XY\). Então tomamos a projeção de \(\vec{P}^{(2)}\) nessa direção:
 
-$$P_{XY}^{(2)}=\vec{P}^{(2)}\cdot\hat{e}_{XY}.$$
+$$P_{XY}^{(2)}=\vec{P}^{(2)}\cdot\hat{e}_{XY}$$
 
 Isso dá
 
-$$d_{\mathrm{eff}}(\phi)=d_{15}\sin^2\phi+d_{24}\cos^2\phi.$$
+$$d_{\mathrm{eff}}(\phi)=d_{15}\sin^2\phi+d_{24}\cos^2\phi$$
 
 Portanto,
 
-$$\boxed{d_{\mathrm{eff}}(\phi)=d_{15}\sin^2\phi+d_{24}\cos^2\phi}.$$
+$$\boxed{d_{\mathrm{eff}}(\phi)=d_{15}\sin^2\phi+d_{24}\cos^2\phi}$$
 
 O sinal global pode mudar dependendo da escolha do sentido de \(\hat{e}_{XY}\), mas a eficiência depende de \(|d_{\mathrm{eff}}|^2\), então esse sinal não altera o resultado físico.
 
 No ângulo encontrado no item anterior, \(\phi\simeq23.6^\circ\),
 
-$$d_{\mathrm{eff}}(23.6^\circ)\simeq0.16\,d_{15}+0.84\,d_{24}.$$
+$$d_{\mathrm{eff}}(23.6^\circ)\simeq0.16\,d_{15}+0.84\,d_{24}$$
 
 Usando \(d_{15}\simeq2.0\,\mathrm{pm/V}\) e \(d_{24}\simeq3.7\,\mathrm{pm/V}\), fica
 
-$$d_{\mathrm{eff}}\simeq3.4\,\mathrm{pm/V}.$$
+$$d_{\mathrm{eff}}\simeq3.4\,\mathrm{pm/V}$$
 
 ### **5.d)**
 
@@ -828,15 +832,15 @@ Para a polarização no plano \(XZ\), o índice efetivo pode variar entre \(n_x\
 
 Por exemplo, se o campo gerado fosse polarizado em \(y\), a condição seria
 
-$$n_y(532)=\frac{n_y(1064)+n_{XZ}(1064,\theta)}{2}.$$
+$$n_y(532)=\frac{n_y(1064)+n_{XZ}(1064,\theta)}{2}$$
 
 O maior valor possível do lado direito seria
 
-$$\frac{n_y(1064)+n_z(1064)}{2}\simeq1.788.$$
+$$\frac{n_y(1064)+n_z(1064)}{2}\simeq1.788$$
 
 Mas
 
-$$n_y(532)\simeq1.789.$$
+$$n_y(532)\simeq1.789$$
 
 Ou seja, falta um pouco para igualar. O outro caso, em que o campo gerado fica no modo \(XZ\), também não cruza a condição de casamento de fase com esses índices.
 
