@@ -1,4 +1,10 @@
-<h1 align="center">List 1 - Nonlinear Optics</h1>
+<div align="center">
+  <b>Student:</b> Caio de Sousa Ribeiro &nbsp;&nbsp;&nbsp;&nbsp; <b>Nº USP:</b> 1368701
+</div>
+
+***
+
+<h1 align="center">List 1</h1>
 
 ### **1.a)**
 
@@ -58,45 +64,82 @@ $$\boxed{\chi^{(2)}\neq 0 \text{ exige ausência de simetria de inversão, enqua
 
 ### **1.b)**
 
-Considera-se agora um meio com resposta não linear de terceira ordem. Assumindo que estamos longe de ressonâncias e que a absorção pode ser desprezada, \(\chi^{(3)}\) pode ser tomado como real. No modelo de Lorentz, isso corresponde a incluir um termo anarmônico de ordem superior no potencial. Por exemplo, em um meio centrossimétrico, o primeiro termo não linear permitido pode ser escrito como
+Considera-se agora um meio com resposta não linear de terceira ordem. Assumindo que estamos longe de ressonâncias e que a absorção pode ser desprezada, $\chi^{(3)}$ pode ser tomado como aproximadamente real. No modelo de Lorentz, uma resposta desse tipo aparece quando se inclui um termo anarmônico de ordem superior no potencial.
 
-$$U(x)\approx \frac{1}{2}m\omega_0^2x^2+\frac{1}{4}mbx^4$$
-
-Nesse caso,
-
-$$\frac{dU}{dx}=m\omega_0^2x+mbx^3$$
-
-e a equação de movimento fica
-
-$$\ddot{x}+2\gamma\dot{x}+\omega_0^2x+bx^3=-\frac{e}{m}E(t)$$
-
-O termo \(bx^3\) é tratado como uma pequena perturbação. Assim, escreve-se
-
-$$x(t)=x_1(t)+x_3(t)+\cdots$$
-
-onde \(x_1\) é a resposta linear e \(x_3\) é a correção de terceira ordem.
-
-Pelo item anterior, em um meio centrossimétrico os termos pares da polarização devem desaparecer. Portanto, a menor correção não linear permitida é de terceira ordem:
+Como discutido no item anterior, em um meio centrossimétrico os termos pares da polarização devem desaparecer. Portanto, a menor correção não linear permitida é de terceira ordem:
 
 $$P=\epsilon_0\chi^{(1)}E+\epsilon_0\chi^{(3)}E^3+\cdots$$
 
-Isso também aparece no modelo microscópico, pois a polarização é proporcional ao deslocamento dos elétrons:
+Microscopicamente, isso é compatível com um potencial par. O primeiro termo anarmônico permitido pode ser escrito como
 
-$$P=-Nex$$
+$$U(x)\approx \frac{1}{2}m\omega_0^2x^2+\frac{1}{4}mbx^4$$
 
-Como \(x_1\propto E\), o termo \(bx^3\) gera uma correção proporcional a \(x_1^3\), isto é, proporcional a \(E^3\). Essa contribuição é representada macroscopicamente por \(\chi^{(3)}\).
+Nesse caso, a força restauradora é
 
-Para um campo monocromático na frequência \(\omega=2\pi c/\lambda_0\), com \(\lambda_0=1560\,\mathrm{nm}\), a polarização de terceira ordem gera duas contribuições principais: uma em \(3\omega\), associada à geração de terceiro harmônico, e outra na própria frequência \(\omega\). É essa última que altera o índice de refração sentido pelo feixe.
+$$F_{\mathrm{rest}}=-\frac{dU}{dx}=-m\omega_0^2x-mbx^3$$
 
-Usando a notação complexa,
+e a equação de movimento para um elétron ligado sob a ação do campo elétrico $E(t)$ fica
+
+$$\ddot{x}+2\gamma\dot{x}+\omega_0^2x+bx^3=-\frac{e}{m}E(t)$$
+
+O termo $bx^3$ é tratado como uma pequena perturbação. Assim, escreve-se
+
+$$x(t)=x_1(t)+x_3(t)+\cdots$$
+
+onde $x_1$ é a resposta linear e $x_3$ é a correção de terceira ordem.
+
+Para um campo monocromático,
 
 $$E(t)=E(\omega)e^{-i\omega t}+\mathrm{c.c.}$$
 
-a componente de terceira ordem na frequência fundamental é proporcional a
+a resposta linear satisfaz
+
+$$D(\omega)x_1(\omega)=-\frac{e}{m}E(\omega)$$
+
+com
+
+$$D(\omega)=\omega_0^2-\omega^2-2i\gamma\omega$$
+
+Logo,
+
+$$x_1(\omega)=-\frac{e/m}{D(\omega)}E(\omega)$$
+
+O termo anarmônico atua como uma força efetiva que gera a correção $x_3$. Como $x_1\propto E$, o termo $x_1^3$ gera contribuições proporcionais a $E^3$. Para um campo monocromático, essas contribuições aparecem principalmente em duas frequências: uma em $3\omega$, associada à geração de terceiro harmônico, e outra na própria frequência $\omega$. É essa componente em $\omega$ que altera o índice de refração sentido pelo feixe.
+
+A componente de $x_1(t)^3$ que oscila na frequência fundamental é
+
+$$[x_1^3]_\omega=3|x_1(\omega)|^2x_1(\omega)$$
+
+Substituindo na equação perturbativa para $x_3$, obtemos
+
+$$D(\omega)x_3(\omega)=-3b|x_1(\omega)|^2x_1(\omega)$$
+
+e, usando a expressão de $x_1(\omega)$,
+
+$$x_3(\omega)=
+\frac{3b(e/m)^3}{D(\omega)^2|D(\omega)|^2}
+|E(\omega)|^2E(\omega)$$
+
+A polarização macroscópica é proporcional ao deslocamento dos elétrons:
+
+$$P=-Nex$$
+
+Assim, a componente de terceira ordem na frequência fundamental é
+
+$$P^{(3)}(\omega)=-Nex_3(\omega)$$
+
+Comparando com a definição macroscópica
 
 $$P^{(3)}(\omega)=3\epsilon_0\chi^{(3)}|E(\omega)|^2E(\omega)$$
 
-Portanto, a polarização total na frequência \(\omega\) pode ser escrita como
+extraímos, dentro deste modelo escalar de Lorentz,
+
+$$\chi^{(3)}(\omega)=
+-\frac{Nbe^4}{\epsilon_0m^3D(\omega)^2|D(\omega)|^2}$$
+
+O sinal de $\chi^{(3)}$ depende do sinal do coeficiente anarmônico $b$ e das convenções adotadas. Para a estimativa numérica abaixo, é mais seguro usar diretamente um valor experimental de $\chi^{(3)}$ para o material. O importante, aqui, é que o modelo mostra por que a correção gerada por um termo cúbico na força restauradora é proporcional a $|E(\omega)|^2E(\omega)$.
+
+Portanto, a polarização total na frequência $\omega$ pode ser escrita como
 
 $$P(\omega)=\epsilon_0\left[\chi^{(1)}+3\chi^{(3)}|E(\omega)|^2\right]E(\omega)$$
 
@@ -112,10 +155,9 @@ temos
 
 $$n^2(I)=n_0^2+3\chi^{(3)}|E(\omega)|^2 \quad \text{onde} \quad n_0^2=1+\chi^{(1)}$$
 
-Agora relacionamos a amplitude complexa do campo com a intensidade. Como \(E_0=2|E(\omega)|\),
+Agora relacionamos a amplitude complexa do campo com a intensidade. Como $E_0=2|E(\omega)|$,
 
-$$I=\frac{1}{2}n_0\epsilon_0cE_0^2
-=2n_0\epsilon_0c|E(\omega)|^2$$
+$$I=\frac{1}{2}n_0\epsilon_0cE_0^2=2n_0\epsilon_0c|E(\omega)|^2$$
 
 Logo,
 
@@ -125,7 +167,7 @@ Substituindo,
 
 $$n(I)=\sqrt{n_0^2+\frac{3\chi^{(3)}}{2n_0\epsilon_0c}I}$$
 
-Como o termo não linear é pequeno,
+Como a correção não linear é pequena, expandimos a raiz:
 
 $$n(I)\approx n_0+\frac{1}{2n_0}\frac{3\chi^{(3)}}{2n_0\epsilon_0c}I$$
 
@@ -137,11 +179,56 @@ com
 
 $$\boxed{n_2=\frac{3\chi^{(3)}}{4n_0^2\epsilon_0c}}$$
 
-Para o nitreto de silício em \(\lambda_0=1560\,\mathrm{nm}\), essa expressão deve ser entendida como
+Até aqui obtivemos a dependência geral pelo modelo de Lorentz. Para particularizar para o nitreto de silício em $\lambda_0=1560\,\mathrm{nm}$, precisamos estimar o índice linear $n_0$ nessa frequência. Como estamos longe de uma ressonância forte do material, a absorção é pequena e podemos usar uma fórmula de Sellmeier para a dispersão linear. Essa é a versão experimental da relação
 
-$$\boxed{n(1560\,\mathrm{nm},I)=n_0(1560\,\mathrm{nm})+n_2(1560\,\mathrm{nm})I}$$
+$$n_0^2(\omega)=1+\chi^{(1)}(\omega)$$
 
-O sinal de \(n_2\) depende do sinal de \(\chi^{(3)}\). Se \(n_2>0\), o índice aumenta com a intensidade; se \(n_2<0\), ele diminui.
+Usando, por exemplo, uma parametrização de Sellmeier para SiN da forma
+
+$$n_0^2(\lambda)=1+\frac{3.585\lambda^2}{\lambda^2-(0.1316)^2}$$
+
+com $\lambda$ em $\mu\mathrm{m}$, temos para $\lambda_0=1.560\,\mu\mathrm{m}$:
+
+$$n_0^2(1.560\,\mu\mathrm{m})\approx 4.61$$
+
+logo
+
+$$n_0(1560\,\mathrm{nm})\approx 2.15$$
+
+Também podemos escrever a dependência espectral de $\chi^{(3)}$ usando a ideia da regra de Miller. Para o efeito Kerr, que envolve a componente em $\omega$, uma forma simples é
+
+$$\chi^{(3)}(\omega;\omega,-\omega,\omega)\approx\delta^{(3)}[\chi^{(1)}(\omega)]^4$$
+
+onde, longe da ressonância,
+
+$$\chi^{(1)}(\omega)=n_0^2(\omega)-1$$
+
+Assim,
+
+$$n_2(\lambda)\approx
+\frac{3\delta^{(3)}[n_0^2(\lambda)-1]^4}
+{4n_0^2(\lambda)\epsilon_0c}$$
+
+A constante $\delta^{(3)}$ depende do material. Portanto, a fórmula de Sellmeier sozinha fixa a parte linear e a dependência espectral esperada, mas não fixa o valor absoluto de $n_2$. Para obter uma estimativa numérica, usamos um valor experimental de literatura para o nitreto de silício em torno de $1.55\,\mu\mathrm{m}$:
+
+$$\chi^{(3)}(1.55\,\mu\mathrm{m})\approx 3.4\times10^{-21}\,\mathrm{m^2/V^2}$$
+
+Esse valor é citado, por exemplo, por [Zabelich et al., ACS Photonics 2022](https://doi.org/10.1021/acsphotonics.2c00888), ao comparar a suscetibilidade Kerr de nitreto de silício com medidas de efeito Kerr DC.
+
+Substituindo esse valor em
+
+$$n_2=\frac{3\chi^{(3)}}{4n_0^2\epsilon_0c}$$
+
+com $n_0\approx 2.15$, obtemos
+
+$$n_2(1560\,\mathrm{nm})\approx 2.1\times10^{-19}\,\mathrm{m^2/W}$$
+
+Portanto, para o SiN nesse comprimento de onda,
+
+$$\boxed{n(1560\,\mathrm{nm},I)\approx
+2.15+\left(2.1\times10^{-19}\,\mathrm{m^2/W}\right)I}$$
+
+com $I$ em $\mathrm{W/m^2}$. Os valores numéricos devem ser lidos como uma estimativa, pois o índice e a não linearidade do SiN variam com a composição e o método de deposição do filme. Como esse valor de $n_2$ é positivo, o índice de refração aumenta com a intensidade do feixe. Fisicamente, esse é o efeito Kerr óptico: o próprio feixe altera o índice que ele enxerga ao se propagar pelo meio. Em um feixe com perfil transversal não uniforme, isso pode levar a uma lente induzida pela própria intensidade, isto é, à autofocalização.
 
 ### **2)**
 
@@ -623,6 +710,152 @@ $$\frac{d a_\omega}{dz}=2iga_\omega^*a_{2\omega}=0,\qquad \frac{d a_{2\omega}}{d
 
 Assim, no modelo clássico, o campo em \(2\omega\) não gera sozinho um campo em \(\omega\). A conversão por diferença de frequências precisa de uma semente clássica na fundamental. A relação de Manley-Rowe continuou preservada numericamente, com erros da ordem de \(10^{-15}\).
 
+### **4.e)**
+
+Agora usamos a mesma ideia de conversão por diferença de frequências para construir um modelo semiclássico simples de SPDC. A onda de maior frequência, \(a_3\), é tratada como a bomba, enquanto \(a_1\) e \(a_2\) são os campos gerados, sinal e idler, satisfazendo
+
+$$\omega_3=\omega_1+\omega_2$$
+
+Para casamento de fase perfeito, ou quase-casamento de fase ideal, as equações normalizadas são as mesmas da geração de soma de frequências, mas agora interpretadas no sentido inverso:
+
+$$\frac{da_1}{dz}=iga_2^*a_3$$
+
+$$\frac{da_2}{dz}=iga_1^*a_3$$
+
+$$\frac{da_3}{dz}=iga_1a_2$$
+
+com
+
+$$\Phi_j=|a_j|^2$$
+
+sendo o fluxo de fótons da onda \(j\).
+
+Para transformar os parâmetros físicos do cristal em uma constante de acoplamento \(g\), escrevemos a amplitude complexa do campo elétrico como
+
+$$E_j=\sqrt{\frac{\hbar\omega_j}{2n_j\epsilon_0cA}}\,a_j$$
+
+pois, com a convenção \(E(t)=E(\omega)e^{-i\omega t}+\mathrm{c.c.}\), a potência óptica é
+
+$$P_j=2n_j\epsilon_0cA|E_j|^2=\hbar\omega_j|a_j|^2$$
+
+Assim, partindo das equações acopladas usuais para os campos elétricos, obtemos
+
+$$\boxed{
+g=d_{\mathrm{eff}}
+\sqrt{\frac{\hbar\omega_1\omega_2\omega_3}
+{2\epsilon_0c^3A\,n_1n_2n_3}}}
+$$
+
+No caso de quase-casamento de fase de primeira ordem em LiNbO\(_3\), usando a inversão periódica do sinal de \(d_{33}\), o coeficiente efetivo é reduzido pelo primeiro harmônico da rede:
+
+$$d_{\mathrm{eff}}\approx\frac{2}{\pi}d_{33}$$
+
+Como o enunciado menciona canais TELECOM de \(100\,\mathrm{GHz}\), considerei o caso degenerado em telecom:
+
+$$\lambda_1=\lambda_2=1550\,\mathrm{nm},\qquad \lambda_3=775\,\mathrm{nm}$$
+
+O código usado neste item foi salvo em `q4/q4e.py`. Os parâmetros numéricos usados foram:
+
+$$L=20\,\mathrm{mm},\qquad P_3(0)=1\,\mathrm{mW},\qquad r_{\mathrm{feixe}}=50\,\mu\mathrm{m}$$
+
+$$A=\pi(50\times10^{-6})^2\simeq7.85\times10^{-9}\,\mathrm{m^2}$$
+
+Para o LiNbO\(_3\) em interação tipo-0, usei os índices extraordinários aproximados
+
+$$n_1=n_2\simeq2.138,\qquad n_3\simeq2.179$$
+
+e
+
+$$d_{33}\simeq27\,\mathrm{pm/V}$$
+
+Esses valores vêm de propriedades tabeladas do LiNbO\(_3\): a fórmula de Sellmeier para o índice extraordinário foi tomada da tabela da [PMOptics para LiNbO\(_3\)](https://www.pmoptics.com/lithium_niobate.html), e o uso de \(d_{33}\simeq27\,\mathrm{pm/V}\) com fator de quase-casamento de fase \(2/\pi\) é também o valor típico discutido pela [RP Photonics](https://www.rp-photonics.com/quasi_phase_matching.html).
+
+logo
+
+$$d_{\mathrm{eff}}\simeq\frac{2}{\pi}(27\,\mathrm{pm/V})\simeq17.2\,\mathrm{pm/V}$$
+
+Com esses valores,
+
+$$g\simeq1.73\times10^{-9}\,\mathrm{m^{-1}}(\mathrm{fotons/s})^{-1/2}$$
+
+O fluxo de fótons da bomba é
+
+$$\Phi_3(0)=\frac{P_3}{\hbar\omega_3}\simeq3.90\times10^{15}\,\mathrm{s^{-1}}$$
+
+O ponto essencial do modelo semiclássico é substituir o campo inicialmente ausente por uma semente equivalente à energia de vácuo. Para cada um dos campos gerados,
+
+$$U_{\mathrm{vac}}=\frac{1}{2}\hbar\omega_j$$
+
+Para converter essa energia em fluxo, precisamos escolher uma janela temporal. O enunciado sugere usar uma largura de banda de \(100\,\mathrm{GHz}\), então
+
+$$\tau\simeq\frac{1}{\Delta\nu}=\frac{1}{100\times10^9}\simeq10\,\mathrm{ps}$$
+
+Isso equivale a tomar, para cada campo gerado, um pacote temporal de comprimento \(v_j\tau\simeq(c/n_j)\tau\), isto é, um volume efetivo
+
+$$V_j\simeq A\frac{c}{n_j}\tau$$
+
+Assim, o fluxo de fótons equivalente ao vácuo em cada modo é
+
+$$\Phi_{\mathrm{vac}}=
+\frac{(1/2)\hbar\omega_j}{\hbar\omega_j\tau}
+=\frac{1}{2\tau}
+=\frac{\Delta\nu}{2}
+\simeq5.0\times10^{10}\,\mathrm{s^{-1}}$$
+
+Como a fase do campo de vácuo não é definida, o cálculo numérico foi repetido para várias fases relativas entre as sementes \(a_1(0)\) e \(a_2(0)\), e depois foi tomada a média. Isso evita escolher artificialmente uma fase de amplificação ou deamplificação, como ocorreu nos itens 4.c) e 4.d).
+
+No regime de bomba não depletada, também podemos obter uma estimativa analítica. Definindo
+
+$$r=g\sqrt{\Phi_3(0)}L$$
+
+as soluções dos campos gerados têm a forma
+
+$$a_1(L)=a_1(0)\cosh r+ia_2^*(0)\sinh r$$
+
+$$a_2(L)=a_2(0)\cosh r+ia_1^*(0)\sinh r$$
+
+Ao fazer a média sobre a fase relativa do vácuo,
+
+$$\langle\Phi_1(L)\rangle=\langle\Phi_2(L)\rangle
+=\Phi_{\mathrm{vac}}\cosh(2r)$$
+
+Portanto, o fluxo gerado acima do nível de vácuo é
+
+$$\Phi_{\mathrm{SPDC}}
+=\langle\Phi_1(L)\rangle-\Phi_{\mathrm{vac}}
+=\Delta\nu\sinh^2 r$$
+
+Para os parâmetros acima,
+
+$$r=g\sqrt{\Phi_3(0)}L\simeq2.16\times10^{-3}$$
+
+Como \(r\ll1\), o processo está no regime de baixo ganho. Numericamente, obtive
+
+$$\Phi_1(L)\simeq5.000047\times10^{10}\,\mathrm{s^{-1}}$$
+
+$$\Phi_2(L)\simeq5.000047\times10^{10}\,\mathrm{s^{-1}}$$
+
+Esses valores incluem o fluxo equivalente de vácuo. Subtraindo o fundo de vácuo, o fluxo gerado por SPDC é
+
+$$\boxed{\Phi_{\mathrm{SPDC}}\simeq4.7\times10^5\,\mathrm{pares/s}}$$
+
+A estimativa analítica \(\Delta\nu\sinh^2 r\) dá o mesmo valor:
+
+$$\Phi_{\mathrm{SPDC}}^{\mathrm{an}}\simeq4.7\times10^5\,\mathrm{pares/s}$$
+
+A figura mostra o crescimento do fluxo gerado ao longo do cristal.
+
+![Fluxo gerado por SPDC no modelo semiclássico](q4/figures/q4e_spdc_fluxo.png)
+
+A depleção relativa da bomba foi
+
+$$\frac{\Phi_3(0)-\Phi_3(L)}{\Phi_3(0)}
+\simeq1.2\times10^{-10}$$
+
+e as relações de Manley-Rowe foram preservadas numericamente com erro máximo da ordem de \(10^{-15}\).
+
+Portanto, diferentemente do modelo clássico com semente exatamente nula, o modelo semiclássico prevê geração de pares porque os modos sinal e idler começam com uma semente associada à energia de vácuo. O resultado depende da largura de banda escolhida, pois ela define o número de modos temporais considerados. Para uma largura de banda de \(100\,\mathrm{GHz}\), uma bomba de \(1\,\mathrm{mW}\) e um cristal de LiNbO\(_3\) de \(20\,\mathrm{mm}\), a taxa estimada é da ordem de \(10^5\) pares por segundo.
+
 ### **5.a)**
 Foram consultadas as seguintes referências para os valores numéricos do KTP usados nesta questão:
 
@@ -776,7 +1009,11 @@ Agora queremos o coeficiente não linear efetivo da interação
 
 $$z+XY\rightarrow XY$$
 
-Para o KTP, usamos a forma reduzida do tensor \(d\):
+Antes de calcular a projeção, precisamos da forma do tensor não linear do KTP. Essa forma não é deduzida dos índices de refração, mas sim da simetria cristalina do material. Nas referências usadas no item 5.a), a PMOptics lista o KTP como um cristal ortorrômbico, e o artigo sobre conversão de frequências em KTP e seus isomorfos afirma que esses cristais pertencem ao grupo pontual \(mm2\).
+
+Dizer que o cristal é ortorrômbico significa que seus três eixos cristalográficos são mutuamente perpendiculares, mas têm comprimentos diferentes, isto é, \(a\neq b\neq c\) e \(\alpha=\beta=\gamma=90^\circ\). Já o grupo pontual \(mm2\) especifica as operações de simetria que deixam o cristal invariante. São essas simetrias que determinam quais elementos do tensor \(\chi^{(2)}\), ou equivalentemente do tensor \(d\), podem ser diferentes de zero.
+
+Usando a notação contraída, em que as colunas correspondem a \(xx,yy,zz,yz,xz,xy\), a forma reduzida permitida para o tensor \(d\) do KTP é
 
 $$
 d=
