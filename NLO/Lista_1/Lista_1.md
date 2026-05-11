@@ -712,11 +712,13 @@ Assim, no modelo clássico, o campo em \(2\omega\) não gera sozinho um campo em
 
 ### **4.e)**
 
-Agora usamos a mesma ideia de conversão por diferença de frequências para construir um modelo semiclássico simples de SPDC. A onda de maior frequência, \(a_3\), é tratada como a bomba, enquanto \(a_1\) e \(a_2\) são os campos gerados, sinal e idler, satisfazendo
+Agora usamos a mesma ideia de conversão por diferença de frequências para construir um modelo semiclássico simples de SPDC. No item 4.d), vimos que, se o campo gerado começa exatamente com amplitude nula, o modelo clássico não produz nada. A ideia semiclássica é substituir essa amplitude inicial nula por uma pequena semente associada à energia de vácuo dos modos gerados.
+
+A onda de maior frequência, \(a_3\), é tratada como a bomba, enquanto \(a_1\) e \(a_2\) são os campos gerados, sinal e idler, satisfazendo
 
 $$\omega_3=\omega_1+\omega_2$$
 
-Para casamento de fase perfeito, ou quase-casamento de fase ideal, as equações normalizadas são as mesmas da geração de soma de frequências, mas agora interpretadas no sentido inverso:
+Para casamento de fase perfeito, ou quase-casamento de fase ideal, as equações normalizadas são as mesmas da geração de soma de frequências, mas interpretadas no sentido de conversão descendente:
 
 $$\frac{da_1}{dz}=iga_2^*a_3$$
 
@@ -730,15 +732,11 @@ $$\Phi_j=|a_j|^2$$
 
 sendo o fluxo de fótons da onda \(j\).
 
-Para transformar os parâmetros físicos do cristal em uma constante de acoplamento \(g\), escrevemos a amplitude complexa do campo elétrico como
+Para usar os parâmetros reais do cristal, precisamos relacionar as amplitudes normalizadas \(a_j\) com os campos elétricos. Como \(\Phi_j=|a_j|^2\) é fluxo de fótons, a potência pode ser escrita tanto como \(P_j=\hbar\omega_j|a_j|^2\) quanto como \(P_j=2n_j\epsilon_0cA|E_j|^2\). Logo,
 
 $$E_j=\sqrt{\frac{\hbar\omega_j}{2n_j\epsilon_0cA}}\,a_j$$
 
-pois, com a convenção \(E(t)=E(\omega)e^{-i\omega t}+\mathrm{c.c.}\), a potência óptica é
-
-$$P_j=2n_j\epsilon_0cA|E_j|^2=\hbar\omega_j|a_j|^2$$
-
-Assim, partindo das equações acopladas usuais para os campos elétricos, obtemos
+Substituindo essa normalização nas equações acopladas, a constante \(g\) fica
 
 $$\boxed{
 g=d_{\mathrm{eff}}
@@ -750,43 +748,39 @@ No caso de quase-casamento de fase de primeira ordem em LiNbO\(_3\), usando a in
 
 $$d_{\mathrm{eff}}\approx\frac{2}{\pi}d_{33}$$
 
-Como o enunciado menciona canais TELECOM de \(100\,\mathrm{GHz}\), considerei o caso degenerado em telecom:
+Como o enunciado menciona canais TELECOM de \(100\,\mathrm{GHz}\), considerei o caso degenerado em telecom. Assim, os dois fótons gerados têm o mesmo comprimento de onda em torno de \(1550\,\mathrm{nm}\), e a bomba fica em \(775\,\mathrm{nm}\):
 
 $$\lambda_1=\lambda_2=1550\,\mathrm{nm},\qquad \lambda_3=775\,\mathrm{nm}$$
 
-O código usado neste item foi salvo em `q4/q4e.py`. Os parâmetros numéricos usados foram:
+O código usado neste item foi salvo em `q4/q4e.py`. Usei os parâmetros do enunciado:
 
 $$L=20\,\mathrm{mm},\qquad P_3(0)=1\,\mathrm{mW},\qquad r_{\mathrm{feixe}}=50\,\mu\mathrm{m}$$
 
-$$A=\pi(50\times10^{-6})^2\simeq7.85\times10^{-9}\,\mathrm{m^2}$$
+de modo que
 
-Para o LiNbO\(_3\) em interação tipo-0, usei os índices extraordinários aproximados
+$$A=\pi r_{\mathrm{feixe}}^2\simeq7.85\times10^{-9}\,\mathrm{m^2}$$
+
+Como a interação é tipo-0, os três campos têm a mesma polarização. Em LiNbO\(_3\) periodicamente polarizado, isso permite usar o maior coeficiente não linear, \(d_{33}\), associado ao eixo extraordinário. Assim, tomei
 
 $$n_1=n_2\simeq2.138,\qquad n_3\simeq2.179$$
 
-e
-
-$$d_{33}\simeq27\,\mathrm{pm/V}$$
-
-Esses valores vêm de propriedades tabeladas do LiNbO\(_3\): a fórmula de Sellmeier para o índice extraordinário foi tomada da tabela da [PMOptics para LiNbO\(_3\)](https://www.pmoptics.com/lithium_niobate.html), e o uso de \(d_{33}\simeq27\,\mathrm{pm/V}\) com fator de quase-casamento de fase \(2/\pi\) é também o valor típico discutido pela [RP Photonics](https://www.rp-photonics.com/quasi_phase_matching.html).
-
-logo
+e \(d_{33}\simeq27\,\mathrm{pm/V}\), valores obtidos de tabelas de LiNbO\(_3\). Com o fator de quase-casamento de fase,
 
 $$d_{\mathrm{eff}}\simeq\frac{2}{\pi}(27\,\mathrm{pm/V})\simeq17.2\,\mathrm{pm/V}$$
 
 Com esses valores,
 
-$$g\simeq1.73\times10^{-9}\,\mathrm{m^{-1}}(\mathrm{fotons/s})^{-1/2}$$
+$$g\simeq1.73\times10^{-9}\,\mathrm{m^{-1}}(\mathrm{s^{-1}})^{-1/2}$$
 
 O fluxo de fótons da bomba é
 
 $$\Phi_3(0)=\frac{P_3}{\hbar\omega_3}\simeq3.90\times10^{15}\,\mathrm{s^{-1}}$$
 
-O ponto essencial do modelo semiclássico é substituir o campo inicialmente ausente por uma semente equivalente à energia de vácuo. Para cada um dos campos gerados,
+Agora entra a parte semiclássica. Para cada campo gerado, colocamos inicialmente a energia de vácuo
 
 $$U_{\mathrm{vac}}=\frac{1}{2}\hbar\omega_j$$
 
-Para converter essa energia em fluxo, precisamos escolher uma janela temporal. O enunciado sugere usar uma largura de banda de \(100\,\mathrm{GHz}\), então
+Para converter essa energia em fluxo, precisamos escolher uma janela temporal. O enunciado sugere uma largura de banda de \(100\,\mathrm{GHz}\), compatível com canais ITU, então
 
 $$\tau\simeq\frac{1}{\Delta\nu}=\frac{1}{100\times10^9}\simeq10\,\mathrm{ps}$$
 
@@ -794,7 +788,7 @@ Isso equivale a tomar, para cada campo gerado, um pacote temporal de comprimento
 
 $$V_j\simeq A\frac{c}{n_j}\tau$$
 
-Assim, o fluxo de fótons equivalente ao vácuo em cada modo é
+Com isso, o fluxo de fótons equivalente ao vácuo em cada modo é
 
 $$\Phi_{\mathrm{vac}}=
 \frac{(1/2)\hbar\omega_j}{\hbar\omega_j\tau}
@@ -802,34 +796,23 @@ $$\Phi_{\mathrm{vac}}=
 =\frac{\Delta\nu}{2}
 \simeq5.0\times10^{10}\,\mathrm{s^{-1}}$$
 
-Como a fase do campo de vácuo não é definida, o cálculo numérico foi repetido para várias fases relativas entre as sementes \(a_1(0)\) e \(a_2(0)\), e depois foi tomada a média. Isso evita escolher artificialmente uma fase de amplificação ou deamplificação, como ocorreu nos itens 4.c) e 4.d).
+As condições iniciais usadas no código foram, portanto,
 
-No regime de bomba não depletada, também podemos obter uma estimativa analítica. Definindo
+$$a_1(0)=\sqrt{\Phi_{\mathrm{vac}}}e^{i\varphi},\qquad
+a_2(0)=\sqrt{\Phi_{\mathrm{vac}}},\qquad
+a_3(0)=\sqrt{\Phi_3(0)}$$
 
-$$r=g\sqrt{\Phi_3(0)}L$$
+Como a fase do campo de vácuo não é definida, o cálculo numérico foi repetido para várias fases relativas \(\varphi\), e depois foi tomada a média. Isso evita escolher artificialmente uma fase de amplificação ou deamplificação.
 
-as soluções dos campos gerados têm a forma
-
-$$a_1(L)=a_1(0)\cosh r+ia_2^*(0)\sinh r$$
-
-$$a_2(L)=a_2(0)\cosh r+ia_1^*(0)\sinh r$$
-
-Ao fazer a média sobre a fase relativa do vácuo,
-
-$$\langle\Phi_1(L)\rangle=\langle\Phi_2(L)\rangle
-=\Phi_{\mathrm{vac}}\cosh(2r)$$
-
-Portanto, o fluxo gerado acima do nível de vácuo é
-
-$$\Phi_{\mathrm{SPDC}}
-=\langle\Phi_1(L)\rangle-\Phi_{\mathrm{vac}}
-=\Delta\nu\sinh^2 r$$
-
-Para os parâmetros acima,
+O parâmetro de ganho esperado é
 
 $$r=g\sqrt{\Phi_3(0)}L\simeq2.16\times10^{-3}$$
 
-Como \(r\ll1\), o processo está no regime de baixo ganho. Numericamente, obtive
+Como \(r\ll1\), o processo está no regime de baixo ganho e a bomba praticamente não deve depletar. Nesse limite, uma estimativa útil para checar a ordem de grandeza é
+
+$$\Phi_{\mathrm{SPDC}}\sim\Delta\nu\sinh^2r\approx\Delta\nu r^2$$
+
+Numericamente, obtive
 
 $$\Phi_1(L)\simeq5.000047\times10^{10}\,\mathrm{s^{-1}}$$
 
@@ -839,11 +822,7 @@ Esses valores incluem o fluxo equivalente de vácuo. Subtraindo o fundo de vácu
 
 $$\boxed{\Phi_{\mathrm{SPDC}}\simeq4.7\times10^5\,\mathrm{pares/s}}$$
 
-A estimativa analítica \(\Delta\nu\sinh^2 r\) dá o mesmo valor:
-
-$$\Phi_{\mathrm{SPDC}}^{\mathrm{an}}\simeq4.7\times10^5\,\mathrm{pares/s}$$
-
-A figura mostra o crescimento do fluxo gerado ao longo do cristal.
+A figura mostra o crescimento do fluxo gerado ao longo do cristal. A linha pontilhada corresponde à estimativa de baixo ganho acima, usada apenas como checagem da simulação.
 
 ![Fluxo gerado por SPDC no modelo semiclássico](q4/figures/q4e_spdc_fluxo.png)
 
