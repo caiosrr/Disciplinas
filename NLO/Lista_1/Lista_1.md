@@ -1065,3 +1065,9 @@ Assim, para esta interação em \(1064\,\mathrm{nm}\),
 $$\boxed{\text{o plano }XZ\text{ não é a escolha adequada para obter casamento de fase perfeito}}$$
 
 Mesmo que em outro comprimento de onda fosse possível casar fase no plano \(XZ\), esse caminho teria uma desvantagem importante: o **walk-off**. No plano \(XY\), o feixe mistura os eixos \(x\) e \(y\), cujos índices são bem próximos. Já no plano \(XZ\), ele mistura \(x\) e \(z\), cujos índices são mais diferentes. Por isso, no plano \(XZ\) a energia do feixe tende a se desviar mais da direção de propagação, fazendo os feixes se separarem lateralmente dentro do cristal. Essa separação reduz a sobreposição entre eles e diminui a eficiência da conversão.
+
+### **6)**
+
+O relatório experimental da questão 6 pode ser visualizado em:
+
+[github.com/caiosrr/Disciplinas/blob/main/NLO/Lista_1/q6/Relatório_lab_ONL.pdf](https://github.com/caiosrr/Disciplinas/blob/main/NLO/Lista_1/q6/Relat%C3%B3rio_lab_ONL.pdf)

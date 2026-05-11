@@ -6,4 +6,4 @@ Esta pasta reúne a resolução da Lista 1 e os códigos usados na parte numéri
 
 - `Lista_1.md`: resolução em Markdown
 - `q4/`: scripts e figuras da Questão 4
-
+- `q6/`: relatório experimental da Questão 6
