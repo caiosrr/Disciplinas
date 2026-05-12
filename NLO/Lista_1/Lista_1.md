@@ -6,6 +6,8 @@
 
 <h1 align="center">List 1</h1>
 
+> **Observação:** A questão 6, do relatório, foi enviado por um dos autores (Higor Arruda) diretamente no moodle. Portanto, ela não está incluída diretamente neste documento. No final da lista há um link para o arquivo correspondente.
+
 ### **1.a)**
 
 No modelo de Lorentz, a resposta óptica do material é descrita pelo movimento de um elétron ligado. A equação de movimento pode ser escrita como
@@ -64,7 +66,7 @@ $$\boxed{\chi^{(2)}\neq 0 \text{ exige ausência de simetria de inversão, enqua
 
 ### **1.b)**
 
-Considera-se agora um meio com resposta não linear de terceira ordem. Assumindo que estamos longe de ressonâncias e que a absorção pode ser desprezada, $\chi^{(3)}$ pode ser tomado como aproximadamente real. No modelo de Lorentz, uma resposta desse tipo aparece quando se inclui um termo anarmônico de ordem superior no potencial.
+Agora consideramos um meio com resposta não linear de terceira ordem. Assumindo que estamos longe de ressonâncias e que a absorção pode ser desprezada, $\chi^{(3)}$ pode ser tomado como aproximadamente real. No modelo de Lorentz, uma resposta desse tipo aparece quando se inclui um termo anarmônico de ordem superior no potencial.
 
 Como discutido no item anterior, em um meio centrossimétrico os termos pares da polarização devem desaparecer. Portanto, a menor correção não linear permitida é de terceira ordem:
 
@@ -137,13 +139,13 @@ extraímos, dentro deste modelo escalar de Lorentz,
 $$\chi^{(3)}(\omega)=
 -\frac{Nbe^4}{\epsilon_0m^3D(\omega)^2|D(\omega)|^2}$$
 
-O sinal de $\chi^{(3)}$ depende do sinal do coeficiente anarmônico $b$ e das convenções adotadas. Para a estimativa numérica abaixo, é mais seguro usar diretamente um valor experimental de $\chi^{(3)}$ para o material. O importante, aqui, é que o modelo mostra por que a correção gerada por um termo cúbico na força restauradora é proporcional a $|E(\omega)|^2E(\omega)$.
+O sinal de $\chi^{(3)}$ depende do sinal do coeficiente anarmônico $b$ e das convenções adotadas. Para a estimativa numérica abaixo, é mais seguro usar diretamente um valor experimental de $\chi^{(3)}$ para o material. Para o que segue, o ponto principal é que o modelo mostra por que a correção gerada por um termo cúbico na força restauradora é proporcional a $|E(\omega)|^2E(\omega)$.
 
-Portanto, a polarização total na frequência $\omega$ pode ser escrita como
+Com isso, a polarização total na frequência $\omega$ pode ser escrita como
 
 $$P(\omega)=\epsilon_0\left[\chi^{(1)}+3\chi^{(3)}|E(\omega)|^2\right]E(\omega)$$
 
-Assim, o campo enxerga uma suscetibilidade efetiva
+Ou seja, o campo passa a enxergar uma suscetibilidade efetiva
 
 $$\chi_{\mathrm{eff}}=\chi^{(1)}+3\chi^{(3)}|E(\omega)|^2$$
 
@@ -179,7 +181,7 @@ com
 
 $$\boxed{n_2=\frac{3\chi^{(3)}}{4n_0^2\epsilon_0c}}$$
 
-Até aqui obtivemos a dependência geral pelo modelo de Lorentz. Para particularizar para o nitreto de silício em $\lambda_0=1560\,\mathrm{nm}$, precisamos estimar o índice linear $n_0$ nessa frequência. Como estamos longe de uma ressonância forte do material, a absorção é pequena e podemos usar uma fórmula de Sellmeier para a dispersão linear. Essa é a versão experimental da relação
+Até aqui, obtivemos a dependência geral pelo modelo de Lorentz. Para particularizar para o nitreto de silício em $\lambda_0=1560\,\mathrm{nm}$, precisamos estimar o índice linear $n_0$ nessa frequência. Como estamos longe de uma ressonância forte do material, a absorção é pequena e podemos usar uma fórmula de Sellmeier para a dispersão linear. Essa é a versão experimental da relação
 
 $$n_0^2(\omega)=1+\chi^{(1)}(\omega)$$
 
@@ -209,7 +211,7 @@ $$n_2(\lambda)\approx
 \frac{3\delta^{(3)}[n_0^2(\lambda)-1]^4}
 {4n_0^2(\lambda)\epsilon_0c}$$
 
-A constante $\delta^{(3)}$ depende do material. Portanto, a fórmula de Sellmeier sozinha fixa a parte linear e a dependência espectral esperada, mas não fixa o valor absoluto de $n_2$. Para obter uma estimativa numérica, usamos um valor experimental de literatura para o nitreto de silício em torno de $1.55\,\mu\mathrm{m}$:
+A constante $\delta^{(3)}$ depende do material. A fórmula de Sellmeier, por si só, fixa a parte linear e sugere a dependência espectral, mas não determina o valor absoluto de $n_2$. Para obter uma estimativa numérica, usamos um valor experimental de literatura para o nitreto de silício em torno de $1.55\,\mu\mathrm{m}$:
 
 $$\chi^{(3)}(1.55\,\mu\mathrm{m})\approx 3.4\times10^{-21}\,\mathrm{m^2/V^2}$$
 
@@ -265,7 +267,7 @@ Substituindo \(n=2\),
 
 $$E_0\approx 7.30\times 10^5\,\mathrm{V/m}$$
 
-A partir daqui, precisamos tomar cuidado com a convenção de amplitude. Nas contas de óptica não linear, costuma-se escrever
+Aqui vale explicitar a convenção de amplitude, porque ela muda fatores de 2. Nas contas de óptica não linear, costuma-se escrever
 
 $$E(t)=E(\omega)e^{-i\omega t}+\mathrm{c.c.}$$
 
@@ -294,6 +296,12 @@ Com \(\chi^{(2)}=4\times 10^{-11}\,\mathrm{m/V}\),
 $$P^{(2)}(2\omega)=\frac{(4\times 10^{-11})(1.4147\times 10^9)}{2(2)(2.998\times 10^8)}$$
 
 $$\boxed{P^{(2)}(2\omega)\approx 4.72\times 10^{-11}\,\mathrm{C/m^2}}$$
+
+Esse valor corresponde à **amplitude complexa** na convenção $E(t)=E(\omega)e^{-i\omega t}+\mathrm{c.c.}$. Se a amplitude solicitada for interpretada como a amplitude real do termo proporcional a $\cos(2\omega t)$, o valor correspondente é o dobro:
+
+$$P^{(2)}_{\mathrm{real}}(2\omega)\approx 9.44\times 10^{-11}\,\mathrm{C/m^2}$$
+
+Nas estimativas de momento de dipolo abaixo, mantemos a convenção de amplitude complexa. Desde que a mesma convenção seja usada para as respostas linear e não linear, a comparação relativa entre elas permanece a mesma.
 
 Estima-se agora a amplitude do momento de dipolo por átomo associado à componente em \(2\omega\). A polarização macroscópica é o momento de dipolo por unidade de volume. Assim,
 
@@ -373,11 +381,11 @@ Além disso, ele é muito menor que o momento de dipolo induzido pela resposta l
 
 $$\mu(2\omega)\sim 10^{-6}\mu(\omega)$$
 
-Assim, para os campos considerados, a resposta de segunda ordem é uma pequena correção à resposta linear do átomo.
+Para os campos deste exercício, a resposta de segunda ordem fica, portanto, como uma pequena correção à resposta linear do átomo.
 
 ### **3)**
 
-Partimos da equação de onda escalar, tomando a polarização não linear de segunda ordem como fonte. Assumindo uma geometria em que $\vec{E}=\hat{e}E(z,t)$ e a propagação ocorre apenas ao longo de $z$:
+Começamos pela equação de onda escalar, tomando a polarização não linear de segunda ordem como fonte. Assumindo uma geometria em que $\vec{E}=\hat{e}E(z,t)$ e a propagação ocorre apenas ao longo de $z$:
 
 $$\frac{\partial^2E}{\partial z^2}-\frac{n^2}{c^2}\frac{\partial^2E}{\partial t^2}=\mu_0\frac{\partial^2P^{(2)}}{\partial t^2}$$
 
@@ -443,7 +451,7 @@ $$\frac{d}{dz}\left(\Phi_2+\Phi_3\right)=-\alpha_2\Phi_2-\alpha_3\Phi_3$$
 
 Portanto, com absorção, as relações de Manley-Rowe não são mais conservadas apenas entre os campos ópticos. Parte da energia é transferida para o meio.
 
-A origem microscópica da absorção não é essencial para essa derivação. O que entra no modelo é o coeficiente efetivo \(\alpha_j\) em cada frequência. A origem da absorção passaria a ser importante se ela dependesse da intensidade, fosse saturável, ou alterasse a própria resposta não linear do material.
+Para esta derivação, a origem microscópica da absorção não entra explicitamente. O que entra no modelo é o coeficiente efetivo \(\alpha_j\) em cada frequência. A origem da absorção passaria a ser importante se ela dependesse da intensidade, fosse saturável, ou alterasse a própria resposta não linear do material.
 
 ### **4.a)**
 
@@ -451,7 +459,7 @@ Os códigos usados nas simulações da questão 4 estão disponíveis em:
 
 [github.com/caiosrr/Disciplinas/tree/main/NLO/Lista_1/q4](https://github.com/caiosrr/Disciplinas/tree/main/NLO/Lista_1/q4)
 
-Primeiro, o problema é resolvido analiticamente usando a aproximação de bomba não depletada. Depois, para comparação, o sistema completo é resolvido numericamente, permitindo que \(a_2\) varie ao longo da propagação.
+Primeiro resolvemos o caso analítico na aproximação de bomba não depletada. Depois, para comparação, resolvemos o sistema completo numericamente, permitindo que \(a_2\) varie ao longo da propagação.
 
 Na geração de soma de frequências, duas ondas de frequências \(\omega_1\) e \(\omega_2\) interagem em um meio com resposta não linear de segunda ordem, produzindo uma terceira onda na frequência
 
@@ -503,11 +511,11 @@ Portanto, na aproximação de bomba não depletada,
 
 $$\eta_{\mathrm{SFG}}^{\mathrm{an}}(z)=\sin^2\left(g|a_2(0)|z\right)$$
 
-Em seguida, o sistema completo é resolvido numericamente por Runge-Kutta de quarta ordem. As condições iniciais escolhidas foram
+Depois integramos o sistema completo numericamente por Runge-Kutta de quarta ordem. As condições iniciais escolhidas foram
 
 $$a_1(0)=1,\qquad a_2(0)=20,\qquad a_3(0)=0$$
 
-Essa escolha satisfaz \(a_1(0)\ll a_2(0)\), com \(a_2\) atuando como uma bomba forte.
+Essa escolha já satisfaz \(a_1(0)\ll a_2(0)\), com \(a_2\) atuando como uma bomba forte.
 
 A figura compara a solução numérica \(\eta_{\mathrm{SFG}}^{\mathrm{num}}\) com a aproximação analítica \(\eta_{\mathrm{SFG}}^{\mathrm{an}}\) para a eficiência.
 
@@ -533,7 +541,7 @@ $$\boxed{\eta_{\mathrm{SFG}}=\sin^2\left(g\sqrt{\Phi_2(0)}z\right)}$$
 
 ### **4.b)**
 
-Considera-se agora a geração de segundo harmônico, ou seja, o caso degenerado em que duas ondas na frequência \(\omega\) geram uma onda em \(2\omega\). Partindo das equações acopladas obtidas no item 4.a), para \(\Delta k=0\), temos que \(a_1\) e \(a_2\) não são mais dois campos independentes.
+Agora consideramos a geração de segundo harmônico, ou seja, o caso degenerado em que duas ondas na frequência \(\omega\) geram uma onda em \(2\omega\). Partindo das equações acopladas obtidas no item 4.a), para \(\Delta k=0\), temos que \(a_1\) e \(a_2\) não são mais dois campos independentes.
 
 Na SHG degenerada, eles correspondem ao mesmo campo fundamental \(a_\omega\). Assim, a variação de \(a_\omega\) recebe as duas contribuições que antes apareciam separadamente em \(a_1\) e \(a_2\):
 
@@ -614,7 +622,7 @@ Portanto, no caso ideal com casamento de fase, a fundamental é quase totalmente
 
 ### **4.c)**
 
-Repete-se o problema anterior considerando que os dois campos têm o mesmo fluxo inicial de fótons:
+Repetimos o problema anterior considerando que os dois campos têm o mesmo fluxo inicial de fótons:
 
 $$\Phi_\omega(0)=\Phi_{2\omega}(0)$$
 
@@ -650,7 +658,7 @@ $$a_{2\omega}(0)=1\quad\Rightarrow\quad a_\omega^2a_{2\omega}^*=1\quad\Rightarro
 
 a variação inicial do fluxo em \(2\omega\) é nula, mas a fase relativa evolui durante a propagação e a dinâmica não permanece estacionária.
 
-O cálculo numérico foi feito por RK4, usando as mesmas equações acopladas da SHG e \(\Delta k=0\).
+Fizemos o cálculo numérico por RK4, usando as mesmas equações acopladas da SHG e \(\Delta k=0\).
 
 ![Amplificação sensível à fase](q4/figures/q4c_amplificacao_sensivel_fase.png)
 
@@ -668,7 +676,7 @@ Isso explica o platô próximo de \(1.5\) observado nos casos \(a_{2\omega}(0)=+
 
 ### **4.d)**
 
-Parte-se do caso de deamplificação do item anterior e diminui-se o fluxo inicial na fundamental. Assim, mantemos
+Partimos do caso de deamplificação do item anterior e diminuímos o fluxo inicial na fundamental. Assim, mantemos
 
 $$a_{2\omega}(0)=-i,\qquad \Phi_{2\omega}(0)=1$$
 
@@ -676,7 +684,7 @@ e variamos
 
 $$\Phi_\omega(0)=1,\qquad 0.3,\qquad 0.05,\qquad 0$$
 
-Como \(a_\omega(0)\) foi tomado real, temos \(a_\omega(0)=\sqrt{\Phi_\omega(0)}\). Usando novamente
+Como tomamos \(a_\omega(0)\) real, temos \(a_\omega(0)=\sqrt{\Phi_\omega(0)}\). Usando novamente
 
 $$\frac{d\Phi_{2\omega}}{dz}=-2g\operatorname{Im}\left(a_\omega^2a_{2\omega}^*\right)$$
 
@@ -690,7 +698,7 @@ $$\left.\frac{d\Phi_{2\omega}}{dz}\right|_{z=0}=-2g\Phi_\omega(0)$$
 
 Portanto, quanto menor for a semente na fundamental, menor será a deamplificação inicial do campo em \(2\omega\).
 
-O cálculo numérico foi feito no intervalo \(0\le gz\le0.5\).
+Fizemos o cálculo numérico no intervalo \(0\le gz\le0.5\).
 
 ![Limite de semente fundamental](q4/figures/q4d_limite_semente_fundamental.png)
 
@@ -748,11 +756,11 @@ No caso de quase-casamento de fase de primeira ordem em LiNbO\(_3\), usando a in
 
 $$d_{\mathrm{eff}}\approx\frac{2}{\pi}d_{33}$$
 
-Como o enunciado menciona canais TELECOM de \(100\,\mathrm{GHz}\), considerei o caso degenerado em telecom. Assim, os dois fótons gerados têm o mesmo comprimento de onda em torno de \(1550\,\mathrm{nm}\), e a bomba fica em \(775\,\mathrm{nm}\):
+Como o enunciado menciona canais TELECOM de \(100\,\mathrm{GHz}\), consideramos o caso degenerado em telecom. Assim, os dois fótons gerados têm o mesmo comprimento de onda em torno de \(1550\,\mathrm{nm}\), e a bomba fica em \(775\,\mathrm{nm}\):
 
 $$\lambda_1=\lambda_2=1550\,\mathrm{nm},\qquad \lambda_3=775\,\mathrm{nm}$$
 
-O código usado neste item foi salvo em `q4/q4e.py`. Usei os parâmetros do enunciado:
+O código usado neste item está no mesmo diretório dos códigos da questão 4, no arquivo `q4/q4e.py`. Usamos os parâmetros do enunciado:
 
 $$L=20\,\mathrm{mm},\qquad P_3(0)=1\,\mathrm{mW},\qquad r_{\mathrm{feixe}}=50\,\mu\mathrm{m}$$
 
@@ -760,7 +768,7 @@ de modo que
 
 $$A=\pi r_{\mathrm{feixe}}^2\simeq7.85\times10^{-9}\,\mathrm{m^2}$$
 
-Como a interação é tipo-0, os três campos têm a mesma polarização. Em LiNbO\(_3\) periodicamente polarizado, isso permite usar o maior coeficiente não linear, \(d_{33}\), associado ao eixo extraordinário. Assim, tomei
+Como a interação é tipo-0, os três campos têm a mesma polarização. Em LiNbO\(_3\) periodicamente polarizado, isso permite usar o maior coeficiente não linear, \(d_{33}\), associado ao eixo extraordinário. Assim, tomamos
 
 $$n_1=n_2\simeq2.138,\qquad n_3\simeq2.179$$
 
@@ -812,7 +820,7 @@ Como \(r\ll1\), o processo está no regime de baixo ganho e a bomba praticamente
 
 $$\Phi_{\mathrm{SPDC}}\sim\Delta\nu\sinh^2r\approx\Delta\nu r^2$$
 
-Numericamente, obtive
+Numericamente, obtivemos
 
 $$\Phi_1(L)\simeq5.000047\times10^{10}\,\mathrm{s^{-1}}$$
 
@@ -836,10 +844,7 @@ e as relações de Manley-Rowe foram preservadas numericamente com erro máximo 
 Portanto, diferentemente do modelo clássico com semente exatamente nula, o modelo semiclássico prevê geração de pares porque os modos sinal e idler começam com uma semente associada à energia de vácuo. O resultado depende da largura de banda escolhida, pois ela define o número de modos temporais considerados. Para uma largura de banda de \(100\,\mathrm{GHz}\), uma bomba de \(1\,\mathrm{mW}\) e um cristal de LiNbO\(_3\) de \(20\,\mathrm{mm}\), a taxa estimada é da ordem de \(10^5\) pares por segundo.
 
 ### **5.a)**
-Foram consultadas as seguintes referências para os valores numéricos do KTP usados nesta questão:
-
-- [PMOptics, Potassium Titanyl Phosphate](https://www.pmoptics.com/potassium_titanyl_phosphate.html)
-- [Frequency Conversion in KTP Crystal and Its Isomorphs](https://www.mdpi.com/2073-4352/8/10/386)
+Os valores numéricos de índices de refração e coeficientes não lineares do KTP usados nesta questão foram retirados das referências de KTP listadas ao final. Aqui usamos apenas valores aproximados, suficientes para identificar a geometria de casamento de fase e estimar \(d_{\mathrm{eff}}\).
 
 Temos dois campos de entrada com o mesmo comprimento de onda,
 
@@ -984,15 +989,11 @@ $$\boxed{\phi_{\mathrm{PM}}\simeq 23.6^\circ}$$
 
 ### **5.c)**
 
-Agora queremos o coeficiente não linear efetivo da interação
+Agora calculamos o coeficiente não linear efetivo da interação
 
 $$z+XY\rightarrow XY$$
 
-Antes de calcular a projeção, precisamos da forma do tensor não linear do KTP. Essa forma não é deduzida dos índices de refração, mas sim da simetria cristalina do material. Nas referências usadas no item 5.a), a PMOptics lista o KTP como um cristal ortorrômbico, e o artigo sobre conversão de frequências em KTP e seus isomorfos afirma que esses cristais pertencem ao grupo pontual \(mm2\).
-
-Dizer que o cristal é ortorrômbico significa que seus três eixos cristalográficos são mutuamente perpendiculares, mas têm comprimentos diferentes, isto é, \(a\neq b\neq c\) e \(\alpha=\beta=\gamma=90^\circ\). Já o grupo pontual \(mm2\) especifica as operações de simetria que deixam o cristal invariante. São essas simetrias que determinam quais elementos do tensor \(\chi^{(2)}\), ou equivalentemente do tensor \(d\), podem ser diferentes de zero.
-
-Usando a notação contraída, em que as colunas correspondem a \(xx,yy,zz,yz,xz,xy\), a forma reduzida permitida para o tensor \(d\) do KTP é
+Para calcular a projeção, usamos a forma padrão do tensor não linear do KTP. O KTP é ortorrômbico e pertence ao grupo pontual \(mm2\), o que fixa quais elementos do tensor \(d\) podem ser diferentes de zero. Na notação contraída, com as colunas correspondendo a \(xx,yy,zz,yz,xz,xy\), a matriz que usamos foi
 
 $$
 d=
@@ -1039,35 +1040,49 @@ $$d_{\mathrm{eff}}\simeq3.4\,\mathrm{pm/V}$$
 
 ### **5.d)**
 
-Resta verificar se algo parecido poderia ser feito no plano \(XZ\). Nesse plano, as duas polarizações seriam:
+Por fim, verificamos se algo parecido poderia ser feito no plano \(XZ\). Nesse plano, os dois modos próprios seriam uma polarização em \(y\) e outra no plano \(XZ\). Para o modo no plano \(XZ\), o índice efetivo varia entre \(n_x\) e \(n_z\), isto é, entre valores bem mais separados do que no caso do plano \(XY\).
 
-- uma polarização em \(y\);
-- uma polarização no plano \(XZ\).
-
-Para a polarização no plano \(XZ\), o índice efetivo pode variar entre \(n_x\) e \(n_z\). Usando os mesmos índices do item anterior, as condições possíveis ficam muito próximas, mas não fecham exatamente para \(1064\,\mathrm{nm}\).
-
-Por exemplo, se o campo gerado fosse polarizado em \(y\), a condição seria
+Usando os mesmos índices aproximados dos itens anteriores, a condição fica muito próxima do limite, mas não fecha exatamente para \(1064\,\mathrm{nm}\). Por exemplo, se o campo gerado fosse polarizado em \(y\), a condição seria
 
 $$n_y(532)=\frac{n_y(1064)+n_{XZ}(1064,\theta)}{2}$$
 
-O maior valor possível do lado direito seria
+O maior valor possível para o lado direito seria
 
 $$\frac{n_y(1064)+n_z(1064)}{2}\simeq1.788$$
 
-Mas
+enquanto
 
 $$n_y(532)\simeq1.789$$
 
-Ou seja, falta um pouco para igualar. O outro caso, em que o campo gerado fica no modo \(XZ\), também não cruza a condição de casamento de fase com esses índices.
+A diferença é pequena, mas com esses valores não há cruzamento exato. O caso alternativo, em que o campo gerado também fica no modo \(XZ\), também não fornece uma solução de casamento de fase para esta escolha de comprimento de onda. Portanto, dentro das aproximações usadas aqui,
 
-Assim, para esta interação em \(1064\,\mathrm{nm}\),
+$$\boxed{\text{o plano }XZ\text{ não fornece casamento de fase perfeito para esta interação em }1064\,\mathrm{nm}.}$$
 
-$$\boxed{\text{o plano }XZ\text{ não é a escolha adequada para obter casamento de fase perfeito}}$$
-
-Mesmo que em outro comprimento de onda fosse possível casar fase no plano \(XZ\), esse caminho teria uma desvantagem importante: o **walk-off**. No plano \(XY\), o feixe mistura os eixos \(x\) e \(y\), cujos índices são bem próximos. Já no plano \(XZ\), ele mistura \(x\) e \(z\), cujos índices são mais diferentes. Por isso, no plano \(XZ\) a energia do feixe tende a se desviar mais da direção de propagação, fazendo os feixes se separarem lateralmente dentro do cristal. Essa separação reduz a sobreposição entre eles e diminui a eficiência da conversão.
+Mesmo se outro comprimento de onda ou outra tabela de Sellmeier colocasse o sistema mais perto do casamento de fase no plano \(XZ\), essa geometria teria uma desvantagem prática importante: o **walk-off**. No plano \(XY\), os índices \(n_x\) e \(n_y\) são próximos, então o desvio espacial é menor. No plano \(XZ\), o modo extraordinário mistura \(x\) e \(z\), que têm índices mais diferentes. Com isso, a direção do fluxo de energia tende a se separar mais da direção de propagação, reduzindo a sobreposição espacial entre os feixes e, consequentemente, a eficiência da conversão.
 
 ### **6)**
 
 O relatório experimental da questão 6 pode ser visualizado em:
 
 [github.com/caiosrr/Disciplinas/blob/main/NLO/Lista_1/q6/Relatório_lab_ONL.pdf](https://github.com/caiosrr/Disciplinas/blob/main/NLO/Lista_1/q6/Relat%C3%B3rio_lab_ONL.pdf)
+
+### **Referências usadas**
+
+Modelo e relações gerais
+
+R. W. Boyd, Nonlinear Optics, 3rd ed., Academic Press, 2008.
+
+Nitreto de silício
+
+B. Zabelich, E. Nitiss, A. Stroganov e C.-S. Brès,
+“Linear Electro-optic Effect in Silicon Nitride Waveguides Enabled by Electric-Field Poling”,
+ACS Photonics 9, 3374–3383 (2022). DOI: 10.1021/acsphotonics.2c00888.
+
+KTP
+
+PMOptics, Potassium Titanyl Phosphate (KTP).
+Disponível em: https://www.pmoptics.com/potassium_titanyl_phosphate.html.
+
+S. Gagarskiy, S. Grechin, P. Druzhinin, K. Kato, D. Kochiev, P. Nikolaev e N. Umemura,
+“Frequency Conversion in KTP Crystal and Its Isomorphs”,
+Crystals 8, 386 (2018). DOI: 10.3390/cryst8100386.
