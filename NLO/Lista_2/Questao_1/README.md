@@ -8,13 +8,17 @@ O programa otimiza a função
 h(xi, sigma) = |integral(exp(i sigma tau)/(1 + i tau), -xi, xi)|² / (4 xi)
 ```
 
-e encontra aproximadamente
+Uma busca numa malha ampla, seguida por uma malha fina ao redor do maior
+ponto, encontra aproximadamente
 
 ```text
-xi ótimo    = 2.8375
-sigma ótimo = 0.5736
+xi ótimo    = 2.8371
+sigma ótimo = 0.5737
 h máximo    = 1.0677
 ```
+
+A convergência é verificada repetindo a quadratura com 120, 240 e 480
+pontos. Os valores acima não mudam de forma relevante.
 
 ## Execução
 
